@@ -20,7 +20,8 @@ public class Principal
         boolean bucle = true;
         String linea = "";
 
-        Calculadora calculadora = new Calculadora();
+        CalculadoraErick calculadora = new CalculadoraErick();
+        //Calculadora calculadora = new Calculadora();
 
         System.out.println("\nBienvenido, este programa simulara una calculadora para expresiones Postfix manejando lectura de datos de\nun archivo de texto (.txt).");
         while(bucle)
