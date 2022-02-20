@@ -1,9 +1,4 @@
 /**
- * 
- */
-package com.uvg.main;
-
-/**
  * @author moises.alonso
  *
  */

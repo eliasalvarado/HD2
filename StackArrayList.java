@@ -1,14 +1,12 @@
 /**
- * 
- */
-package com.uvg.main;
-
-import java.util.ArrayList;
-/**
  * @author moises.alonso
  *
  */
-public class StackArrayList<T> implements IStack<T> {
+
+import java.util.ArrayList;
+
+public class StackArrayList<T> implements IStack<T>
+{
 
 	private ArrayList<T> coreList;
 	

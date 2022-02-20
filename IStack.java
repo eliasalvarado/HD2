@@ -1,12 +1,9 @@
 /**
- * 
- */
-package com.uvg.main;
-
-/**
  * @author moises.alonso
  *
  */
+
+ 
 public interface IStack<T> {
 
 	void push(T value);
