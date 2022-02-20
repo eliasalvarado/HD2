@@ -6,6 +6,11 @@
 
 public class Calculadora implements IPosfixCalc
 {
+	/** 
+	 * @param expresion
+	 * @return int
+	 * @throws ArithmeticException
+	 */
 	public int Evaluate(String expresion) throws ArithmeticException
 	{
 		int resultado = 0;
@@ -19,7 +24,7 @@ public class Calculadora implements IPosfixCalc
 			{
 				if(stack.count() <= 1) 
 				{
-					throw new IllegalArgumentException("\nNo se puede realizar la operacion a falta de operadores.");
+					throw new IllegalArgumentException("\nNo se puede realizar la operacion a falta de operadores."); // pre: Deben existir mas de dos operador. 
 				}
 				else
 				{
@@ -43,7 +48,7 @@ public class Calculadora implements IPosfixCalc
 
 					else
 					{
-						if(op1 == 0) throw new IllegalArgumentException("\nNo se puede realizar la operacion a falta de operadores.");
+						if(op1 == 0) throw new IllegalArgumentException("\nNo se puede realizar la division entre 0."); //No se puede dividir en 0
 						else resultado = op2 / op1;
 					}
 
